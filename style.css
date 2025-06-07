@@ -578,9 +578,13 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
-.contact-form {
-  display: flex;
-  flex-direction: column;
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1.2rem;
+  background: var(--light-pink);
+  color: var(--dark-pink);
+  /* text-transform: capitalize; */
+  border: none;
 }
 .form-heading {
   font-size: 4.6rem;
@@ -589,4 +593,13 @@ body {
 }
 .contact-btn {
   align-self: end;
+  background-color: var(--darkest-pink);
+  color: var(--lighter-pink);
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: var(--darker-pink);
 }
