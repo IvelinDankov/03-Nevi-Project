@@ -68,6 +68,10 @@ body {
   justify-content: space-between;
 }
 
+.header-wrapper > a {
+  color: inherit;
+}
+
 .logo {
   font-size: 6.4rem;
   font-weight: 800;
@@ -687,4 +691,39 @@ body {
 
 .review-btn:hover {
   background-color: var(--darker-pink);
+}
+
+footer {
+  width: 100%;
+  background-color: var(--darkest-pink);
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 130rem;
+  background-color: var(--darkest-pink);
+  padding: 0.5rem;
+}
+
+.footer-navigation-list {
+  list-style-type: none;
+}
+
+.footer-navigation-link:link,
+.footer-navigation-link:visited {
+  text-decoration: none;
+  color: var(--lighter-pink);
+  text-transform: capitalize;
+}
+.footer-navigation-link:hover,
+.footer-navigation-link:active {
+  text-decoration: none;
+  color: var(--light-pink);
+}
+
+.footer-copy {
+  width: 100%;
+  background-color: var(--light-pink);
+  text-align: center;
+  padding: 0.5rem 0;
 }
