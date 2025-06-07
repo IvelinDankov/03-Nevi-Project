@@ -18,7 +18,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <title>Home</title>
+    <title>Shop</title>
   </head>
 
   <body>
@@ -53,15 +53,34 @@
     </header>
 
     <main>
-      <div class="hero-container">
-        <div class="hero">
-          <h1 class="primary-heading">
-            Confy. <br />
-            Cousy.
-          </h1>
-          <a class="btn hero-btn" href="/shop.html">Shop Now</a>
-        </div>
-      </div>
+      <section class="shopping-card-container">
+        <ul class="shopping-card">
+          <h2 class="shopping-cart-heading">Your Cart</h2>
+          <li class="shopping-cart">
+            <img
+              class="shopping-cart-image"
+              src="./static/item-1-images/item-image-1.png"
+              alt="item-image-1"
+            />
+            <p class="shopping-cart-item">1</p>
+            <div class="shopping-cart-content">
+              <h3 class="shopping-cart-title">Comfy Chloe Knit Blanket</h3>
+              <p class="shopping-cart-color">Color: Pink</p>
+              <p class="shopping-cart-qty">Queantity: 3</p>
+            </div>
+            <div class="shopping-cart-content">
+              <p class="shopping-cart-price-acc">
+                <span>20€</span> X <span>3</span> = <span>60€</span>
+              </p>
+              <button class="remove-btn">
+                <ion-icon name="trash-bin-outline"></ion-icon> Remove
+              </button>
+            </div>
+          </li>
+          <p class="shopping-cart-summary">Total: 60.00€</p>
+          <button class="shopping-card-purchuse-btn" type="">Purchuse</button>
+        </ul>
+      </section>
     </main>
 
     <script src="script.js"></script>
