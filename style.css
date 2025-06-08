@@ -69,12 +69,17 @@ body {
 }
 
 .header-wrapper > a {
-  color: inherit;
+  color: var(--text-color);
+}
+
+.bxs-shopping-bag {
+  font-size: 3rem;
 }
 
 .logo {
-  font-size: 6.4rem;
+  font-size: 4rem;
   font-weight: 800;
+  line-height: 0.75;
 }
 
 .navigation {
@@ -103,8 +108,9 @@ body {
   text-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-[name="basket-outline"] {
-  font-size: 4rem;
+[name="shopping-bag"] {
+  font-size: 6rem;
+  vertical-align: center;
 }
 
 .hero-container {
@@ -693,6 +699,8 @@ body {
   background-color: var(--darker-pink);
 }
 
+/* FOOTER */
+
 footer {
   width: 100%;
   background-color: var(--darkest-pink);
@@ -726,4 +734,185 @@ footer {
   background-color: var(--light-pink);
   text-align: center;
   padding: 0.5rem 0;
+}
+/* REGISTER */
+
+.register-container {
+  width: 100%;
+}
+
+.register {
+  height: calc(100vh - 9rem);
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 5rem;
+}
+
+.register-header {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("/static/contact-image-banner.png");
+}
+.register-heading {
+  font-size: 9.6rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-shadow: 0 3px 3px var(--shopping-cart-color);
+  /* padding: 1rem 0; */
+}
+
+.register-content-box {
+  display: flex;
+  gap: 4rem;
+}
+
+.register-form-image-box {
+  flex: 1 0 50%;
+}
+
+.register-image {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.register-form {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 8rem;
+}
+.register-form input,
+.register-form textarea {
+  padding: 1rem 1.4rem;
+  background: var(--light-pink);
+  color: var(--dark-pink);
+  /* text-transform: capitalize; */
+  border: none;
+  outline: none;
+}
+.register-form-heading {
+  text-align: center;
+  font-size: 4.6rem;
+  color: var(--darkest-pink);
+  margin-bottom: 2rem;
+}
+.register-starts {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  color: gold;
+}
+.register-starts > * {
+  font-size: 4rem;
+}
+.register-btn {
+  align-self: end;
+  background-color: var(--darkest-pink);
+  color: var(--lighter-pink);
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: var(--darker-pink);
+}
+
+/* LOGIN */
+
+.login-container {
+  width: 100%;
+}
+
+.login {
+  height: calc(100vh - 9rem);
+  max-width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 5rem;
+}
+
+.login-header {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("/static/contact-image-banner.png");
+}
+.login-heading {
+  font-size: 9.6rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-shadow: 0 3px 3px var(--shopping-cart-color);
+  /* padding: 1rem 0; */
+}
+
+.login-content-box {
+  display: flex;
+  gap: 4rem;
+}
+
+.login-form-image-box {
+  flex: 1 0 50%;
+}
+
+.login-image {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.login-form {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 8rem;
+}
+.login-form input,
+.login-form textarea {
+  padding: 1rem 1.4rem;
+  background: var(--light-pink);
+  color: var(--dark-pink);
+  /* text-transform: capitalize; */
+  border: none;
+  outline: none;
+}
+.login-form-heading {
+  text-align: center;
+  font-size: 4.6rem;
+  color: var(--darkest-pink);
+  margin-bottom: 2rem;
+}
+.login-starts {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  color: gold;
+}
+.login-starts > * {
+  font-size: 4rem;
+}
+.login-btn {
+  align-self: end;
+  background-color: var(--darkest-pink);
+  color: var(--lighter-pink);
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: var(--darker-pink);
 }
