@@ -14,15 +14,11 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <title>Home</title>
+    <title>Shop</title>
   </head>
 
   <body>
@@ -49,9 +45,6 @@
               <a class="navigation-link" href="/contact.html">contact</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="/create.html">create</a>
-            </li>
-            <li class="navigation-item">
               <a class="navigation-link" href="/register.html">register</a>
             </li>
             <li class="navigation-item">
@@ -62,46 +55,73 @@
             </li>
           </ul>
         </nav>
-        <a class="shopcart-link" href="/shopping-card.html">
-          <span class="shopcart-number">3</span>
+        <a href="/shopping-card.html">
           <i class="bx bxs-shopping-bag"></i>
         </a>
       </div>
     </header>
 
     <main>
-      <div class="hero-container">
-        <div class="hero">
-          <h1 class="primary-heading">
-            Confy. <br />
-            Cousy.
-          </h1>
-          <a class="btn hero-btn" href="/shop.html">Shop Now</a>
-        </div>
-      </div>
-    </main>
+      <section class="create-container">
+        <div class="create">
+          <header class="create-header">
+            <h2 class="create-heading">Create</h2>
+          </header>
 
-    <footer>
-      <div class="footer-container">
-        <nav class="footer-navigation">
-          <ul class="footer-navigation-list">
-            <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="/home.html">home</a>
-            </li>
-            <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="/shop.html">shop</a>
-            </li>
-            <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="/about.html">about</a>
-            </li>
-            <li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="/contact.html">contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <p class="footer-copy">&copy; All rights reserved!</p>
-    </footer>
+          <div class="create-content-box">
+            <div class="create-form-image-box">
+              <img class="create-image" src="./static/image 1.png" alt="" />
+            </div>
+            <form class="create-form">
+              <h3 class="create-form-heading">create new Item</h3>
+              <input type="text" name="title" value="" placeholder="Title" />
+              <input type="text" name="imageUrl" value="" placeholder="Image" />
+              <input
+                type="text"
+                name="imageUrl-1"
+                value=""
+                placeholder="Image-1"
+              />
+              <input
+                type="text"
+                name="imageUrl-2"
+                value=""
+                placeholder="Image-2"
+              />
+              <input
+                type="text"
+                name="imageUrl-3"
+                value=""
+                placeholder="Image-3"
+              />
+              <input
+                type="text"
+                name="imageUrl-4"
+                value=""
+                placeholder="Image-4"
+              />
+              <input
+                type="text"
+                name="description"
+                value=""
+                placeholder="Description"
+              />
+              <select>
+                <option value="xxl">xxl</option>
+                <option value="xl">xl</option>
+                <option value="l">l</option>
+                <option value="m">m</option>
+                <option value="s">s</option>
+                <option value="xs">xs</option>
+              </select>
+              <input type="number" name="price" value="" placeholder="Price" />
+
+              <button class="create-btn" type="submit">Create</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
